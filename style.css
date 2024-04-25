@@ -1,4 +1,27 @@
+hr {
+  border-color: black;
+}
+
 body {
   background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQncEEb8e-aJucCLU_SCwcLcTCUIHfalVbItJi6r76r8Q&s);
   background-size: cover;
+  font-family: 'Jacquard', sans-serif;
+}
+
+h1 {
+  text-align: center;
+}
+
+p {
+  text-align: center;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+}
+
+.input_container {
+  text-align: center;
+  align-items: center;
 }

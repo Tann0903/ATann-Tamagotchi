@@ -3,13 +3,43 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jacquard+24&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
     <script src="app.js" defer></script>
     <title>Tamagatchi</title>
   </head>
   <body>
-    <h1>Tamagatchi</h1>
-    <h2>Finally, you can have your own virtual pet... that happens to be a jack o' lantern. <br>But oh isn't is a cutie??
-    <br>I'm glad you think so because it will be YOUR job to love it, play with it, feed it, put it to sleep and HOPEFULLY not kill it.</h2>
+
+    <h1><em>PUMPKIN-GOTCHI</em></h1>
+
+    <hr>
+
+    <p><strong>Finally you can have your own virtual pet... <br>Again! <br>And this one happens to be a jack o' lantern. <br>Isn't it a lil cutie?
+    <br>I'm glad you think so because it will be YOUR job to love it, play with it, feed it, put it to sleep and HOPEFULLY not kill it. <br> May the odds ever be in your pet's favor         </strong></p>
+
+    <div class = "input_container">
+      <input type="text" placeholder="Your Pumpkin's Name">
+      <button type="Submit"> Submit</button>
+    </div>
+
+    <hr>
+
+<div class = "buttons">
+<button onclick="sleep"> LIGHTS OFF</button> <br>
+<!--The backgroud image is going to change to a nighttime cemetery but as for the pet, maybe I can use the dead images for sleep and use a zombie sprite for when it actually dies-->
+<button onclick="eat"> FEED</button> <br>
+<!--Maybe add an eating sound since I'm not sure how to make it eat-->
+<button onclick="play"> PLAY</button> <br>
+<!--Use the running images for when play is selected-->
+</div>
+
+  <footer>
+    &lt;&lt;&lt;&copy; Amber Tann &gt;&gt;&gt;
+  </footer>
   </body>
 </html>
