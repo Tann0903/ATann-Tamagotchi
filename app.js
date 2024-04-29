@@ -15,5 +15,12 @@ sleepButton.addEventListener("click", () => {
   // why are we using an arrow function here?
   document.body.style.backgroundImage =
     "url('https://img.freepik.com/free-vector/pet-cemetery-night-animal-graveyard-with-tombstones-grave-tombs-with-cats-dogs-birds-souls-near-monuments-with-their-photos-full-moon-dark-starry-sky-cartoon-illustration_107791-5902.jpg')";
-    document.querySelector('h1').style.color='white';
+  document.querySelector('h1').style.color='white';
 });
+
+const snoring = document.getElementById("snoring");
+
+sleepButton.addEventListener("click", () => {
+  sound.play()
+}
+)
