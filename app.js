@@ -55,7 +55,6 @@ document.getElementById("submitButton").addEventListener("click", function() {
   age++;
   // It's being displayed in the "Age" box
   ageLevel.textContent = age;
-});
 
 // Using the 'setInterval' function to increase the age every 20 secs
 setInterval(function() {
@@ -63,9 +62,13 @@ setInterval(function() {
   // Update the age displayed in the HTML
   ageLevel.textContent = age;
 }, 5000);
+});
 
 // ?Having issues using the event listener to start the counter after the submit button has been clicked.?
+// FIXED - The counter was not intially working because I did not wrap it in the button.
+
 // ?ChatGPT helped cleaned up my code but I am unsure as to why when I remove the value of "textContent", it breaks my code.?
+// FIXED - I figured out why removing it breaks my code - because I was overthinking it and not realizing that "textContent" is what is going to be showing on the html
 
 // ******* EATING **********
 

@@ -47,7 +47,7 @@ footer {
 }
 
 .face {
-  position: center;
+  position: static; 
   float: right;
   margin: 20px 100px 100px 20px;
   border-radius: 100%;
@@ -61,6 +61,32 @@ footer {
   animation: rotate 3s linear infinite;
 }
 
+/* position: center; - This line is invalid in CSS. The correct values for the position property are static, relative, absolute, fixed, or sticky.
+
+// FIXED - the center property; changed to static
+
+float: right; - This property is used to align an element to the right within its containing element.
+
+margin: 20px 100px 100px 20px; - This sets different margin values for each side of the element in the order top, right, bottom, left.
+
+border-radius: 100%; - This property is used to create a circular border radius for the element.
+
+right: 5px; - This positions the element 5 pixels from the right edge of its containing element.
+
+width: 545px; - Sets the width of the element to 545 pixels.
+
+height: 474px; - Sets the height of the element to 474 pixels.
+
+background: url(img/jack1.png); - This sets the background image of the element to the image located at the URL img/jack1.png.
+
+top: 50%; - Positions the top of the element 50% down from the top of its containing element.
+
+left: 50%; - Positions the left of the element 50% across from the left of its containing element.
+
+transform: translate(-50%, -50%); - This moves the element 50% up and to the left from its current position using a CSS transformation.
+
+animation: rotate 3s linear infinite; - This applies an animation named "rotate" to the element. The animation has a duration of 3 seconds, uses a linear timing function, and runs infinitely. */
+
 @keyframes rotate {
   0% {
     transform: rotate(0);
@@ -70,3 +96,15 @@ footer {
     transform: rotate(360deg);
   }
 }
+
+/* @keyframes: It is a CSS at-rule that controls the intermediate steps in a CSS animation sequence by defining styles for keyframes at specific percentages along the animation.
+
+rotate: This is the name given to the keyframe animation sequence.
+
+0%: This is the starting point of the animation where the transformation specified within the block is applied when the animation is at 0%.
+
+100%: This is the end point of the animation where the transformation specified within the block is applied when the animation is at 100%.
+
+transform: rotate(0);: This line specifies the transformation - in this case, it rotates an element by 0 degrees when the animation is at 0%.
+
+transform: rotate(360deg);: This line specifies the transformation - it rotates the element by 360 degrees when the animation is at 100%. */
