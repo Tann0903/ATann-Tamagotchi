@@ -15,27 +15,52 @@
 
     <hr>
 
-    <p><strong>Finally you can have your own virtual pet... <br>Again! <br>And this one happens to be a jack o' lantern. <br>Isn't it a lil cutie?
-    <br>I'm glad you think so because it will be YOUR job to love it, play with it, feed it, put it to sleep and HOPEFULLY not kill it. <br> May the odds ever be in your pet's favor         </strong></p>
+    <p class ="intro"><strong>Finally you can have your own virtual pet... <br>Again! <br>And this one happens to be a jack-o'-lantern. <br>Ain't it a li'l cutie?
+    <br>I'm glad you think so because it will be YOUR job to play with it, feed it, put it to sleep and HOPEFULLY not kill it. <br> May the odds ever be in your pet's favor         </strong></p>
 
-    <div class = "input_container">
-      <input type="text" placeholder="Your Pumpkin's Name">
-      <button type="Submit"> Submit</button>
+    <form id="counterForm">
+      <div class = "input">
+      <input type="text" placeholder="Your Pumpkin's Name" id="petName">
+      <input type ="button" id="submitButton" value="Click Me">
+<!-- Becayuse you're using 'input type-button', you dont need to use a listed button -->
+      <p class="output" id="output1"></p>
     </div>
+  </form>
 
     <hr>
 
+<img class="face" src="img/jack1.png">
+<!-- <img class="sleepyFace" src="img/jack_sleep.png" -->
+
+  <h2>HOW TO PLAY</h2>
+
 <div class = "buttons">
 
-  <button id="sleepButton"> LIGHTS OFF</button> <br>
-<!--The backgroud image is going to change to a nighttime cemetery but as for the pet, there will be a snoring sound-->
- <audio id="snoring" src=> </audio>
-  <button onclick="eatButton"> FEED</button> <br>
+  <button id="eatButton"> FEED</button> <br>
+  <p class ="instructions"> Feed your pet periodically but not too much as gluttony is a sin and it can die.</p>
+  <audio id="eating" src="sounds/jack_eat.mp3"></audio>
 <!--Maybe add an eating sound-->
-  <button onclick="playButton"> PLAY</button> <br>
-<!--Use the running images or create a static image to run across the screen-->
+
+  <button id="playButton"> PLAY</button> <br>
+  <p class="instructions"> Play with your pumpkin because we all know bored kills. And that includes your pet.</p>
+  <audio id="playing" src="sounds/jack_laugh.mp3"></audio>
+<!--Use the running images or create a static image to run across the screen and adding creepy laughter-->
+
+<button id="sleepButton"> LIGHTS OFF</button> <br>
+<p class="instructions"> Turn off the lights, but no need to light a candle, so your pet can sleep.</p>
+<audio id="snoring" src="sounds/short_snore.mp3"></audio>
+<!--The background will change back to the original once the audio stops playing after 6 Seconds-->
+<!--The backgroud image is going to change to a nighttime cemetery but as for the pet, there will be a snoring sound-->
 </div>
 
+<div class="stats">
+  <div class="grid-item hunger" id="hungerLevel">Hunger Level - 0</div>
+  <div class="grid-item play" id="playLevel">Boredom Level - 0</div>
+  <div class="grid-item play" id="sleepLevel">Sleep Level - 0</div>
+  <div class="grid-item age" span id="ageLevel">1</div>
+</div>
+
+<!-- <button id="interval"></button> <br> -->
   <footer>
     &lt;&lt;&lt;&copy; Amber Tann &gt;&gt;&gt;
   </footer>
