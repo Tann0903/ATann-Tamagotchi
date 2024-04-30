@@ -61,7 +61,7 @@ setInterval(function() {
   age++;
   // Update the age displayed in the HTML
   ageLevel.textContent = age;
-}, 5000);
+}, 10000);
 });
 
 // ?Having issues using the event listener to start the counter after the submit button has been clicked.?
@@ -77,11 +77,11 @@ const eating = document.getElementById("eating");
 
 eatButton.addEventListener("click", function() {
   document.body.style.backgroundImage =
-  "url('/img/eating.avif')";
+  "url('/img/eating.png')";
   eating.play();
 
   setTimeout(function() {
-     document.body.style.backgroundImage = "url(/img/daytime_cem.avif)";
+     document.body.style.backgroundImage = "url('/img/daytime_cem.png')";
      document.querySelector('h1').style.color='black'
    }, 7000);
 });
@@ -94,12 +94,12 @@ const playing = document.getElementById("playing");
 playButton.addEventListener("click", function() {
 
   document.body.style.backgroundImage =
-  "url('/img/play_jack2.jpeg')";
+  "url('/img/play_jack2.png')";
   document.querySelector('h1').style.color='white';
   playing.play();
 
   setTimeout(function() {
-    document.body.style.backgroundImage = "url(/img/daytime_cem.avif)";
+    document.body.style.backgroundImage = "url('/img/daytime_cem.png')";
     document.querySelector('h1').style.color='black'
   }, 7000);
 });
@@ -116,13 +116,13 @@ playButton.addEventListener("click", function() {
   sleepButton.addEventListener("click", function() {
 
     document.body.style.backgroundImage =
-    "url('/img/pumpkin night.jpeg')";
+    "url('img/pumpkin night.png')";
     document.querySelector('h1').style.color='white';
     // Play the audio
     snoring.play();
 
     setTimeout(function() {
-       document.body.style.backgroundImage = "url(/img/daytime_cem.avif)";
+       document.body.style.backgroundImage = "url('/img/daytime_cem.png')";
        document.querySelector('h1').style.color='black'
      }, 7000);
   });
